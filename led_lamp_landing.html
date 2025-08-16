@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED-садовая лампа</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
+    header { background:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; text-align:center; }
+    header h1 { font-size:2.5em; margin-bottom:0.3em; }
+    header p { font-size:1.2em; margin-bottom:1em; }
+    .btn { background:#ff7b00; color:#fff; padding:15px 30px; text-decoration:none; border-radius:8px; font-weight:bold; border:none; cursor:pointer; }
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; margin-bottom:30px; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+    .feature { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
+    .reviews { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px; }
+    .review { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .price { text-align:center; font-size:1.4em; margin-bottom:20px; }
+    form { display:flex; flex-direction:column; max-width:400px; margin:auto; gap:15px; }
+    input { padding:12px; border:1px solid #ccc; border-radius:6px; font-size:1em; }
+    footer { text-align:center; padding:20px; background:#222; color:#fff; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Укрась свой сад и балкон волшебным светом 🌙✨</h1>
+    <p>Декоративная LED-садовая лампа — уют и стиль в каждом уголке</p>
+    <a href="#order" class="btn">Заказать со скидкой</a>
+  </header>
+
+  <section>
+    <h2>Одна лампа — сотни вариантов декора</h2>
+    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1000&q=80" alt="Садовая лампа" style="width:100%; border-radius:12px;">
+  </section>
+
+  <section>
+    <h2>Преимущества</h2>
+    <div class="features">
+      <div class="feature">💡 Экономия энергии<br><small>Работает на солнечных батареях</small></div>
+      <div class="feature">🌧 Защита от влаги<br><small>Подходит для улицы</small></div>
+      <div class="feature">✨ Эффект свечения<br><small>Создаёт романтическую атмосферу</small></div>
+      <div class="feature">🔧 Лёгкая установка<br><small>Без проводов и сложностей</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Отзывы покупателей</h2>
+    <div class="reviews">
+      <div class="review">«Поставила у себя на даче, теперь вечерами сад как из сказки!»<br><b>Анна, Киев</b></div>
+      <div class="review">«Купил 3 штуки, повесил на террасе — соседи завидуют!»<br><b>Игорь, Львов</b></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Цена и акция</h2>
+    <div class="price">
+      <del>799 грн</del> <br>
+      Сегодня: <b>499 грн</b><br>
+      🎁 При заказе 2+ штук — скидка 10%
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Оформить заказ</h2>
+    <form action="https://formspree.io/f/mayplqkw" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <input type="text" name="address" placeholder="Адрес доставки" required>
+      <button type="submit" class="btn">Оформить заказ</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 LED-садовая лампа | Все права защищены
+  </footer>
+</body>
+</html>
